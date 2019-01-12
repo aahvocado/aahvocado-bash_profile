@@ -1,0 +1,46 @@
+# - System shortcuts
+alias cddev="cd ~/dev"
+alias sublopen="open -a Sublime\ Text"
+alias bashprofile="sublopen ~/.bash_profile"
+alias bashrefresh="source ~/.bash_profile; echo -e 'Refreshed bash_profile!'"
+alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
+
+# - Git Shortcuts
+alias gs="git status"
+alias gf="git fetch"
+alias gr="git rebase"
+alias gfr="git fetch; git rebase;"
+alias grabort="git rebase --abort"
+alias grcont="git rebase --continue"
+
+alias ga="git add"
+alias guna="git reset HEAD"
+alias gcom="git commit -m"
+alias guncom="git reset --soft HEAD^"
+alias gam="git add -A; git commit -m"
+
+alias gdiff="git diff"
+alias glog="git log"
+alias gcp="git cherry-pick"
+alias gstash="git stash"
+alias gunstash="git stash pop"
+
+alias gp="git push"
+alias gpo="git push origin"
+alias gpFORCE="git push --force"
+alias gpoFORCE="git push --force origin"
+
+alias gbran="git branch"
+alias gdelbran="git branch -D"
+alias gmakebran="git checkout -b"
+
+alias gdiscard="git checkout"
+alias gdiscardall="git checkout .; git clean -df"
+
+alias gchko="git checkout"
+alias glignore="git update-index --assume-unchanged"
+alias gunlignore="git update-index --no-assume-unchanged"
+
+# - NPM Shortcuts
+alias npmcleanup="rm -rf node_modules; npm i"
+alias npmstart="npm run start"
